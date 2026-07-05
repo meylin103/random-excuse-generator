@@ -1,5 +1,248 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-body{
-    background: white;
+/* =====================================
+   CSS VARIABLES
+===================================== */
+
+:root {
+  --primary: #7c3aed;
+  --secondary: #3b82f6;
+
+  --background: #f8fafc;
+  --card: #ffffff;
+
+  --text: #1e293b;
+  --subtitle: #64748b;
+
+  --border: #e2e8f0;
+
+  --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================
+   RESET
+===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   BODY
+===================================== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* =====================================
+   MAIN
+===================================== */
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* =====================================
+   CARD
+===================================== */
+
+.card {
+  width: 100%;
+  max-width: 650px;
+
+  background: var(--card);
+
+  border-radius: 20px;
+
+  padding: 45px;
+
+  text-align: center;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+}
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+/* =====================================
+   TITLE
+===================================== */
+
+h1 {
+  color: var(--text);
+
+  font-size: 2rem;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+/* =====================================
+   SUBTITLE
+===================================== */
+
+.subtitle {
+  color: var(--subtitle);
+
+  margin-bottom: 35px;
+
+  font-size: 1rem;
+
+  line-height: 1.6;
+}
+
+/* =====================================
+   EXCUSE CONTAINER
+===================================== */
+
+.excuse-container {
+  background: #f1f5f9;
+
+  border-radius: 15px;
+
+  padding: 30px;
+
+  margin-bottom: 35px;
+
+  min-height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =====================================
+   EXCUSE TEXT
+===================================== */
+
+#excuse {
+  font-size: 1.4rem;
+
+  color: var(--text);
+
+  font-weight: 600;
+
+  line-height: 1.7;
+}
+
+/* =====================================
+   BUTTON GROUP
+===================================== */
+
+.button-group {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.button-group button {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+
+  color: white;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 15px 28px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* =====================================
+   BUTTON HOVER
+===================================== */
+
+.button-group button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.25);
+}
+
+/* =====================================
+   BUTTON ACTIVE
+===================================== */
+
+.button-group button:active {
+  transform: scale(0.98);
+}
+
+/* =====================================
+   ICONS
+===================================== */
+
+.button-group i {
+  margin-right: 8px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+  .card {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  #excuse {
+    font-size: 1.15rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  .logo {
+    width: 75px;
+  }
 }

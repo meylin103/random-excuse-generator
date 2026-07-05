@@ -1,23 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Random Excuse Generator | Vanilla JavaScript</title>
+
+    <!-- Favicon -->
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-     <p id="excuse">My dog ate my homework</p>
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+        rel="icon"
+        href="./assets/img/favicon.png"
+        type="image/png">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="card">
+
+            <img
+                src="./assets/img/logo.png"
+                alt="Random Excuse Generator Logo"
+                class="logo">
+
+            <h1>Random Excuse Generator</h1>
+
+            <p class="subtitle">
+                Need a creative excuse? We've got one.
+            </p>
+
+            <article class="excuse-container">
+
+                <p id="excuse"></p>
+
+            </article>
+
+            <div class="button-group">
+
+                <button id="generate-btn">
+
+                    <i class="fas fa-random"></i>
+
+                    Generate Excuse
+
+                </button>
+
+                <button id="copy-btn">
+
+                    <i class="fas fa-copy"></i>
+
+                    Copy
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
     <script type="module" src="/app.js"></script>
-  </body>
+
+</body>
+
 </html>
