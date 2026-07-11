@@ -1,31 +1,36 @@
-# 🎭 Random Excuse Generator
+# Random Excuse Generator
 
-A modern and responsive web application built with **HTML, CSS, and Vanilla JavaScript** that generates random excuses with a clean user interface.
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-This project was originally based on a coding exercise and later redesigned into a polished portfolio project by applying modern frontend development practices, improving the UI, and refactoring the JavaScript code.
+A modern web application built with **Vanilla JavaScript** that dynamically generates random excuses through DOM manipulation and event-driven programming.
 
----
-
-## ✨ Features
-
-- 🎲 Generate unlimited random excuses
-- 📋 Copy excuses to the clipboard
-- 🎨 Modern and responsive user interface
-- ⚡ Fast and lightweight
-- 🧹 Clean and maintainable JavaScript code
+The project focuses on writing clean, maintainable JavaScript while creating a polished and responsive user interface using modern frontend development practices.
 
 ---
 
-## 📸 Screenshots
-
-### Home
-
+## Preview
 
 ![Random Excuse Generator](docs/screenshots/home2.jpg)
 
 ---
 
-## 🛠️ Technologies
+## Features
+
+- Generate unlimited random excuses
+- Copy generated excuses to the clipboard
+- Responsive user interface
+- Dynamic content updates without page reload
+- Modern UI with reusable styling
+- Clean and maintainable JavaScript code
+
+---
+
+## Tech Stack
+
+### Frontend
 
 - HTML5
 - CSS3
@@ -35,9 +40,9 @@ This project was originally based on a coding exercise and later redesigned into
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-```
+```text
 src/
 │
 ├── assets/
@@ -48,99 +53,83 @@ src/
 ├── app.js
 ├── style.css
 └── index.html
+
+docs/
+└── screenshots/
+    └── home.png
 ```
 
 ---
 
-## 🚀 Installation
+## Getting Started
 
-Clone the repository
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/meylin103/random-excuse-generator.git
-```
 
-Go to the project directory
-
-```bash
+# Navigate to the project
 cd random-excuse-generator
-```
 
-Install dependencies
-
-```bash
+# Install dependencies
 npm install
-```
 
-Run the development server
-
-```bash
+# Start the development server
 npm run start
 ```
 
-Open
 
-```
-http://localhost:3000
-```
+## How It Works
 
----
-
-## 💻 How It Works
-
-The application randomly combines four arrays:
+Every time the user clicks the **Generate Another Excuse** button, JavaScript randomly selects one value from each of four arrays:
 
 - Who
 - Action
 - What
 - When
 
-Each click generates a completely new excuse using JavaScript and updates the page dynamically without reloading.
+The selected values are combined into a complete sentence and rendered dynamically without reloading the page.
 
 ---
 
-## 📚 What I Learned
+## Skills Demonstrated
 
-During this project I strengthened my understanding of:
-
-- Semantic HTML
-- CSS Flexbox
-- CSS Variables
-- Responsive Design
 - DOM Manipulation
-- Event Listeners
+- Event Handling
 - JavaScript Functions
-- ES6 Template Literals
 - Array Manipulation
+- Bootstrap Integration
 - Clipboard API
-- Code Refactoring
 - Clean Code Principles
 
 ---
 
-## 🚀 Future Improvements
+## Roadmap
 
-Some ideas for future versions include:
-
-- Dark Mode
-- Toast Notifications
-- Favorite Excuses
-- Excuse History
-- Sound Effects
-- Multiple Languages
+- [ ] Add Dark Mode
+- [ ] Save favorite excuses
+- [ ] Display excuse history
+- [ ] Support multiple languages
+- [ ] Add custom excuse categories
+- [ ] Share excuses directly to social media
 
 ---
 
-## 👩‍💻 Author
+## Author
 
-**Meylin Fuentes**
+**Meilyn Fuentes**
+
+AWS Certified Cloud Practitioner
+
+Full Stack Developer
+
+Cloud & Backend Enthusiast
 
 - GitHub: https://github.com/meylin103
-- LinkedIn:www.linkedin.com/in/meilynfuentes
-
-
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub.
+- LinkedIn: https://www.linkedin.com/in/meilynfuentes
